@@ -1,0 +1,281 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+
+/* universal */
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading {
+  margin: 5rem;
+}
+.shadowBorder {
+  box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 60%);
+  transition: 0.2s all;
+}
+.shadowBorder:hover {
+  box-shadow: 0px 0px 55px 0px rgb(0 0 0 / 75%);
+}
+a {
+  text-decoration: none;
+}
+
+/* navbar  */
+
+nav {
+  justify-content: space-between;
+  padding: 50px 10px 50px 10px;
+  height: 20px;
+}
+.navbar {
+  list-style: none;
+}
+/* logo */
+.logoDiv {
+  width: 20%;
+}
+.logo {
+  height: 40%;
+  width: 40%;
+}
+#menu,#close{
+    display: none;
+}
+.navbar {
+  width: 80%;
+  height: 100%;
+}
+.navbar li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  margin: 0px 20px;
+  font-size: 1.2rem;
+}
+.navbar li a {
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+.navbar li a:hover {
+  padding-bottom: 10px;
+}
+
+/* block1 - front view */
+.block1,
+.block2Content {
+  background-color: #0693e3;
+  flex-direction: column;
+  color: white;
+}
+.block1Content {
+  flex-direction: column;
+  font-size: 22px;
+  height: 100%;
+  padding: 6.5rem;
+  text-align: center;
+}
+.block1Content h2 {
+  margin: 0px 0px 30px 0px;
+}
+
+/* block2 - form */
+
+.block2 {
+  padding: 2rem 3rem;
+}
+form {
+  width: 65%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 25px;
+  padding: 0px 12% 0px 12%;
+}
+.block2Content {
+  height: 1000px;
+  width: 35%;
+  padding: 20px;
+  font-size: 28px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 60%);
+}
+.block2ContentImage {
+  margin: 100px 0px 30px 0px;
+}
+.block2ContentImage img,
+.reviews img {
+  height: 100px;
+  width: 100px;
+}
+
+/* block3 - sponsors */
+
+.block3,
+.block4 {
+  flex-direction: column;
+}
+.block3 img {
+  width: 70%;
+}
+
+/* block 4 - review  */
+.reviews {
+  margin: 0px 30px 5rem 30px;
+  width: 40%;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 30px;
+}
+
+/* block5  */
+
+.block5Content{
+    width: 45%;
+    margin:10px;        }
+.block5Content img{
+    width: 100%;
+    border-radius: 100px;
+    box-shadow:0px 0px 25px 0px rgb(0 0 0 / 60%); ;
+}
+.block5Content h2,.block5Content p, .block5Content button{
+    margin: 15px;
+}
+.block5Content button{
+    width: 70%;
+    border-radius: 30px;
+}
+
+/* footer  */
+footer {
+  background-color: #222327;
+  color: white;
+  padding: 10px;
+}
+.footerContent {
+  margin: 10px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+ul {
+  list-style: none;
+}
+footer li {
+  margin: 30px 0px;
+}
+footer a {
+  color: whitesmoke;
+  font-size: 15px;
+}
+footer a:hover {
+  color: #0693e3;
+}
+.footerContent1 {
+  margin-bottom: 6rem;
+}
+.footerContent2 {
+  border-top: 2px solid gray;
+  padding-top: 20px;
+}
+
+/* conatct page css  */
+
+/* companies review section  */
+.contactReviewBlockPrimary {
+  background-color: whitesmoke;
+}
+.contact-block {
+  width: 100%;
+  padding: 0px;
+}
+.contact-block img {
+  height: 200px;
+  width: 100%;
+}
+@keyframes navheight {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+/* media  */
+
+@media (max-width: 890px) {
+    nav{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .navbar{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        transition: navheight 2s ease-in-out;
+    }
+    .navbar li{
+        margin :10px;
+        width: 100%;
+    }
+    .logoDiv{
+        width: 100%;
+        
+    }
+    .menuButton #menu{
+        display: flex;
+    }
+    .logo{
+        width:30%
+    }
+    .block1Content{
+        padding: 6rem;
+    }
+  .footerContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .mediaBlock {
+    flex-direction: column;
+  }
+  .reviews {
+    width: 80%;
+  }
+  .block2 {
+      flex-direction: column;
+  }
+  form{
+      padding: 0px;
+  }
+  .block2Content{
+      width: 100%;
+      height: 500px;
+  }
+  .block5{
+      flex-direction: column;
+  }
+  .block5Content{
+      width: 90%;
+      text-align: center;
+  }
+}
+@media (max-width : 425px) {
+    .block1Content{
+        padding: 4rem;
+    }
+}
