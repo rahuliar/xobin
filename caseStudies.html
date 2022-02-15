@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xobin/caseStudies</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .caseStudiesBlock1::before{
+            content: " ";
+            position: absolute;
+            height: 90vh;
+            width: 100%;
+            background-image: url('caseStudiesBlock1BG.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.7;
+
+            z-index: -1;
+        }
+        .caseStudiesBlock1 {
+            position:relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            height: 95vh;
+            font-size: 25px;
+            padding: 3rem;
+            text-align: center;
+            background: transparent;
+        }
+        .reviews {
+            border: 1px solid black;
+            padding: 0px;
+            margin: 10px;
+            height: fit-content;
+        }
+
+        .heading {
+            margin-top: 10px;
+        }
+
+        .reviews img {
+            height: 20%;
+            width: 100%;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            font-size: 15px;
+            height: 20%;
+            width: 25%;
+            margin-top: 20px;
+            border-radius: 18px;
+        }
+
+        .btn:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navigation bar  -->
+
+    <nav class="block">
+        <div class="block logoDiv">
+            <a href="index.html"><img class="logo"
+                    src="https://xobin.com/wp-content/uploads/2021/04/XobinLogoLatest.png" alt="#"></a>
+            <div class="block menuButton" style="height: 50px; width: 50px;">
+                <img id="menu" style="height: 100%; width: 100%;" src="menuButton.png" alt="">
+                <img id="close" style="height: 100%; width: 100%;" src="crossButton.png" alt="">
+            </div>
+        </div>
+        <ul class="navbar block" id="navbar">
+            <li><a href="caseStudies.html">casestudies</a></li>
+            <li><a href="readyMadeTests.html" class="dropdown">Ready-made-Tests &#x2193;
+                </a>
+            </li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="#" class="dropdown">Products &#x2193;</a>
+            </li>
+            <li><a href="customers.html">Customer <span style="color: red;">&#10084;</span></a></li>
+            <li><a href="getstarted.html">Get Started</a></li>
+            <li><a href="signin.html">SIGN IN &#8594;</a></li>
+        </ul>
+    </nav>
+
+    <!-- block 1 -->
+
+    <div class="block caseStudiesBlock1">
+        <h1 class="heading">Resources from #1 Assessment Software to ace the Recruitment Game</h1>
+        <h4>From Coding Tests to Virtual Campus Hiring and Psychometric Tests. We've been there. Done that. Check out
+            some of our work.</h4>
+    </div>
+    <!-- block 2  -->
+    <div class="block4 block">
+        <h1>Case Studies and Success Stories</h1>
+        <span class="heading">Learn how Xobin Assessment Software helps organization with data-driven recruitment
+            decision </span>
+
+        <!-- id-boxes  -->
+
+        <div class="block mediaBlock">
+            <div class="reviews">
+                <img src="https://screen.xobin.com/hubfs/ZoloCSResource.png" alt="">
+            </div>
+            <div class="reviews">
+                <img src="https://screen.xobin.com/hubfs/Ideas2IT_CaseStudy_Cover.png" alt="">
+            </div>
+            <div class="reviews">
+                <img src="https://screen.xobin.com/hubfs/HeadStart_CoverImg.png" alt="">
+            </div>
+        </div>
+        <button class="btn heading">View All Sucess Stories</button>
+    </div>
+
+    <!-- block 3  -->
+
+    <div class="block4 block">
+        <h1>Webinars and XobinTalks</h1>
+        <span class="heading">Our Thought Leadership Series with the HR Leaders. Discussion on latest trends, best
+            practices and recruitment challeges</span>
+
+        <!-- id-boxes  -->
+
+        <div class="block mediaBlock">
+            <div class="reviews">
+                <img src="https://screen.xobin.com/hubfs/WebinarImg/1.png" alt="">
+            </div>
+            <div class="reviews">
+                <img src="https://screen.xobin.com/hubfs/WebinarImg/5.png" alt="">
+            </div>
+            <div class="reviews">
+                <img src="https://screen.xobin.com/hubfs/WebinarImg/3.png" alt="">
+            </div>
+        </div>
+        <button class="btn heading">View All Sucess Stories</button>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>

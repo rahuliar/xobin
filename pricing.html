@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xobin/pricing</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        .reviews{
+            text-align: left;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            background-color: rgb(64, 168, 236);
+            color: rgb(255, 255, 255);
+            margin: 10px 10px;
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+        }
+        .reviews{
+            padding: 0px;
+            margin:10px;
+            height: fit-content;
+        }
+        .block4 .heading{
+            margin-top: 10px;
+        }
+        .PlansBlock .reviews{
+            padding: 30px;
+            text-align: center;
+        }
+        .PlansBlock .reviews ul{
+            padding: 30px;
+            height: 20%;
+            width: 100%;
+            list-style:disc;
+            text-align: left;
+        }
+    </style>
 </head>
+
 <body>
 
     <!-- navigation bar  -->
 
     <nav class="block">
         <div class="block logoDiv">
-                <a href="index.html"><img class="logo" src="https://xobin.com/wp-content/uploads/2021/04/XobinLogoLatest.png" alt="#"></a>
+            <a href="index.html"><img class="logo"
+                    src="https://xobin.com/wp-content/uploads/2021/04/XobinLogoLatest.png" alt="#"></a>
             <div class="block menuButton" style="height: 50px; width: 50px;">
-                <img id="menu"style="height: 100%; width: 100%;"  src="menuButton.png" alt="">
-                <img id="close"style="height: 100%; width: 100%;"  src="crossButton.png" alt="">
+                <img id="menu" style="height: 100%; width: 100%;" src="menuButton.png" alt="">
+                <img id="close" style="height: 100%; width: 100%;" src="crossButton.png" alt="">
             </div>
         </div>
         <ul class="navbar block" id="navbar">
+            <li><a href="caseStudies.html">casestudies</a></li>
             <li><a href="readyMadeTests.html" class="dropdown">Ready-made-Tests &#x2193;
-            </a>
+                </a>
             </li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="#" class="dropdown">Products &#x2193;</a>
@@ -31,7 +70,7 @@
             <li><a href="signin.html">SIGN IN &#8594;</a></li>
         </ul>
     </nav>
-    
+
     <!-- block-1 -->
 
     <div class="block block1">
@@ -40,6 +79,110 @@
         </div>
     </div>
 
+    <!-- block 2 -->
+    <div class="block3 block PlansBlock">
+        <h1 class="heading" style="margin: 2rem;">UNLIMITED ASSESSMENTS & CANDIDATES
+        </h1>
+        <span style="margin: 1rem;">See how Xobin expedites your recruitment process in three simple plans and with no hidden fees in sight!</span>
+        <div class="block">
+            <button>Annual</button>
+            <button>Monthly</button>
+        </div>
+        <div class="block mediaBlock">
+            <div class="reviews">
+                <h>STANDARD</h>
+                <h1>$199/month</h1>
+                <h5>(billed annually)</h5>
+                <button>Sign up Today!</button>               
+               <ul>
+                   <li>Unlimited Assessment, Unlimited Test Takers</li>
+                   <li>Access to Skill tests(General Aptitude, Coding, Finance, Marketing & Technology)</li>
+                   <li>Webcam Proctoring</li>
+                   <li>Psychometric Assessments</li>
+                   <li>API Access</li>
+                   <li>Access to Compilers for Coding Questions – C, C++, Java 8, Python 3,PHP, JavaScript, NodeJS, C#</li>
+                   <li>Email Support</li>
+                   <li>100 Simultaneous test takers allowed</li>
+                   <li>10 Admins</li>
+               </ul>
+            </div>
+            <div class="reviews" style="border: 1px solid blue;">
+                <h>STANDARD</h>
+                <h1>$699/month</h1>
+                <h5>(billed annually)</h5>
+                <button>Sign up Today!</button>               
+               <ul>
+                  <li>Everything in Essential Plus Additionally,</li>
+                  <li>Video Interviews and Recorded Video Assessments upto 100,000 Minutes of Video Streaming/Storage per month</li>
+                  <li>Advanced API</li>
+                  <li>Email Support</li>
+                  <li>Video Interviews (With 2 interviewer) Additional interviewer 150</li>
+                  <li>100 Simultaneous Test takers allowed</li>
+                  <li>10 Admins</li>
+               </ul>
+            </div>
+            <div class="reviews">
+                <h4>STANDARD</h4>
+                <h5>Have a high traffic requirement</h5>
+                <button>Sign up Today!</button>
+                <ul>
+                    <li>Everything in Standard Plus,</li>
+                    <li>Multi Team/Company Account Dashboard</li>
+                    <li>Custom Branding and White labelling</li>
+                    <li>Upto 3 Grey AI Psychometric Tests. Additional Test at 50 USD/Month</li>
+                    <li>Concierge Service with Dedicated Account Manager for creating assessments</li>
+                    <li>24×7 Email, Chat and Telephonic Support</li>
+                    <li>Unlimited Simultaneous Test takers allowed</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- block-3  -->
+
+    <div class="block3 block">
+        <h1 class="heading">It’s been close to 3 years since we started using Xobin. We’ve assessed over 2000 candidates and hired many freshers. Xobin is an integral part of our team.
+        </h1>
+        <img src="https://xobin.com/wp-content/uploads/2021/01/ezgif.com-gif-maker.png" alt="" style="height: 150px; width: 150px;"/>
+        <h3>Arun Kumar Ganesan</h3>
+        <h3>Associate Director, Ideas2IT</h3>
+    </div>
+
+    <!-- block 4 -->
+
+    <div class="block4 block contactReviewBlockPrimary" style="margin-top: 30px; background-color: wheat">
+        <h2 class="heading">Frequently Asked Question</h2>
+        <div class="block mediaBlock" >
+            <div class="reviews contact-block contactBlockReviewSection">
+                <h4>What is meant by “Upto 50 Simultaneous test takers” ?</h4>
+                <p>It means at a given time a maximum of 50 candidates can be taking the test. The 51st candidate will have to wait for some one to finish a test before she can start. You will be able to monitor all the candidates who are taking the test in the Live feed in your dashboard.</p>
+            </div>
+            <div class="reviews contact-block contactBlockReviewSection">
+                <h4>What are the modes of payment you support ?</h4>
+                <p>We support all Credit/Debit cards. We use Stripe as our primary payment gateway partner. We also support Paypal and Razorpay as secondary payment gateways. We also support invoice based payments (only for annual payments4</p>
+            </div>
+        </div>
+        <div class="block mediaBlock">
+            <div class="reviews contact-block contactBlockReviewSection">
+                <h4>What is meant by “Upto 50 Simultaneous test takers” ?</h4>
+                <p>It means at a given time a maximum of 50 candidates can be taking the test. The 51st candidate will have to wait for some one to finish a test before she can start. You will be able to monitor all the candidates who are taking the test in the Live feed in your dashboard.</p>
+            </div>
+            <div class="reviews contact-block contactBlockReviewSection">
+                <h4>What are the modes of payment you support ?</h4>
+                <p>We support all Credit/Debit cards. We use Stripe as our primary payment gateway partner. We also support Paypal and Razorpay as secondary payment gateways. We also support invoice based payments (only for annual payments4</p>
+            </div>
+        </div>
+        <div class="block mediaBlock">
+            <div class="reviews contact-block contactBlockReviewSection">
+                <h4>What are the modes of payment you support ?</h4>
+                <p>We support all Credit/Debit cards. We use Stripe as our primary payment gateway partner. We also support Paypal and Razorpay as secondary payment gateways. We also support invoice based payments (only for annual payments4</p>
+            </div>
+            <div class="reviews contact-block contactBlockReviewSection">
+                <h4>What is meant by “Upto 50 Simultaneous test takers” ?</h4>
+                <p>It means at a given time a maximum of 50 candidates can be taking the test. The 51st candidate will have to wait for some one to finish a test before she can start. You will be able to monitor all the candidates who are taking the test in the Live feed in your dashboard.</p>
+            </div>
+        </div>
+    </div>
     <!-- footer  -->
 
     <footer>
@@ -103,4 +246,5 @@
     </footer>
     <script src="index.js"></script>
 </body>
+
 </html>
