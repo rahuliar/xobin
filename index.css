@@ -222,6 +222,11 @@ footer a:hover {
         flex-direction: column;
         height: fit-content;
     }
+    .block1 .block1Content{
+      font-size: 20px;
+      padding: 0px;
+    }
+    
     .navbar{
         display: none;
         flex-direction: column;
@@ -276,7 +281,18 @@ footer a:hover {
   }
 }
 @media (max-width : 425px) {
+  body{
+    font-size: 15px;
+  }
     .block1Content{
-        padding: 4rem;
+        margin: 2rem;
+    }
+    .block1 .heading{
+      padding: none;
+    }
+    .heading{
+      font-size: 27px;
+      margin: 8px;
+      padding: 5px;
     }
 }
